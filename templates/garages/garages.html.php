@@ -12,8 +12,9 @@
        
             </strong></p>
             
-            <a href="garage.php?id=<?php echo $garage['id']?>" class="btn btn-primary">Voir ce garage</a>
-            <a href="deleteGarage.php?id=<?php echo $garage['id']?>" class="btn btn-danger">Delete garage</a>
+            <a href="index.php?controller=garage&task=show&id=<?php echo $garage['id']?>" class="btn btn-primary">Voir ce garage</a>
+            
+            <a href="index.php?controller=garage&task=suppr&id=<?php echo $garage['id']?>" class="btn btn-danger">Delete garage</a>
             <hr>
         </div>
 

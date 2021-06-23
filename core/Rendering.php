@@ -1,26 +1,16 @@
 <?php
 
-/**
- * redirect to the url in parameter
- * 
- * @param string
- */
 
-function redirect(string $url): void {
+class Rendering {
 
-    header("Location:".$url);
-  
-}
-
-/**
+    /**
  * generates data rendering 
  * 
  * @param string $template
  * @param array $data
  * 
  */
-
-function render(string $template, array $data):void {
+    public static function render(string $template, array $data):void {
 
     extract($data);
 
@@ -34,6 +24,9 @@ function render(string $template, array $data):void {
 
     
 
+    }
 }
+
+
 
 ?>

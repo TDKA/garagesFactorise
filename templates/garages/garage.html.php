@@ -1,4 +1,5 @@
 
+<a href="index.php" class="btn btn-primary">Retour aux garages</a>
 <h1>Garage: <?php echo $garage['name'] ?> </h1>
 
 <ul>
@@ -8,8 +9,7 @@
 
 </ul>
 
-
-    <form action="saveAnnonce.php" method="POST" class="row col-md-6">
+    <form action="index.php?controller=annonce&task=create" method="POST" class="row col-md-6">
     
         <h3>Ajouter une annonce</h3>
 
@@ -44,7 +44,7 @@
                     <h5 class="card-title">Name: <?php echo $annonce['name'] ?></h5>
                     <h7 class="card-title">Annonce:  <?php echo $annonce['id'] ?></h7>
                     <p class="card-text">Price: <?php echo $annonce['price'] ?> €</p>
-                    <a href="deleteAnnonce.php?id=<?php echo $annonce['id']?>" class="btn btn-danger">Delete annonce</a>
+                    <a href="index.php?controller=annonce&task=suppr&id=<?php echo $annonce['id'] ?>" class="btn btn-danger">Delete annonce</a>
                 </div>
 
         <?php } ?>

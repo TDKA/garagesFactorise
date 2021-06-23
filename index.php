@@ -1,16 +1,10 @@
 <?php 
-require_once "core/database.php";
-require_once "core/utils.php";
 
-    $garages = findAllGarages();
+require_once "core/autoloading.php";
 
-    $titlePage = "Garages";
+\App::process();
 
-    render("garages/garages",
-            compact('garages', 'titlePage')
-        );
 
-?>
 
 
 
