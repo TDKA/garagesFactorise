@@ -46,15 +46,19 @@ public function show() {
         }
 
         /// ******* Find gateau ********* ///
-     
         $gateau = $this->model->find($gateau_id);
+
+
+        ///// ****** Find Reccetes   ***** ///
+        $modelRecette = new \Model\Recette();
+        $recettes = $modelRecette->findAllByGateau($gateau_id); 
 
 
         $titlePage = $gateau['name'];
            
         \Rendering::render("gateaux/gateau",
 
-        compact('gateau', 'titlePage')
+        compact('gateau','recettes', 'titlePage')
 
         );
 

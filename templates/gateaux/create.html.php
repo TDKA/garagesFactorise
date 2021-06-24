@@ -1,6 +1,4 @@
 
-
-
 <?php if (!$gateau) {?>
 
 <form action="index.php?controller=gateau&task=create" method="POST" class="row col-md-6">

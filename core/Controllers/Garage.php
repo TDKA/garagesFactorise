@@ -50,7 +50,7 @@ class Garage extends Controller {
         ///// ****** Find Annonces   ***** ////
         
         $modelAnnonce = new \Model\Annonce();
-        $annonces = $modelAnnonce->findAllByGarage($garage_id); // 
+        $annonces = $modelAnnonce->findAllByGarage($garage_id); 
 
         $titlePage = $garage['name'];
            

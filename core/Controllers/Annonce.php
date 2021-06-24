@@ -71,7 +71,7 @@ public function suppr() {
                 die("Enter valid id in the url");
             }
                 
-            //find garage by id
+            //find annonce by id
         
             $annonce = $this->model->find($annonce_id); 
             

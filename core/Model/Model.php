@@ -65,7 +65,7 @@ abstract class Model {
 
         $delete->execute(['id' => $id]);
 
-        // \Http::redirect('index.php');
+
     }
 
 
